@@ -17,7 +17,7 @@ class QuizAdmin(admin.ModelAdmin):
 class AnswerInlineModel(admin.TabularInline):
     model=models.Answer
     fields=[
-        'answe_text ',
+        'answer_text',
         'is_right',
     ]
 
