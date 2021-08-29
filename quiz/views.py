@@ -17,7 +17,7 @@ class RandomQuestion(APIView):
         serializer =RandomQuestionSerializer(questions,many=True)
         return Response(serializer.data)
 
-class Questions(generics.ListAPIView):
+class Question(generics.ListAPIView):
     serializer_class=QuestionSerializer
     queryset=Questions.objects.all()
 
